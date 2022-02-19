@@ -29,7 +29,7 @@ class _SearchScreenState extends State<SearchScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    String apiKey = 'AIzaSyAeq_m6Xus_Isb8jtVQ7TbZP9Q2hV4shR0';
+    String apiKey = 'AIzaSyCmBmDcWkbaV5uObneKoEOWlZ8NvD-m4_0';
     googlePlace = GooglePlace(apiKey);
 
     startFocusNode = FocusNode();
@@ -188,7 +188,9 @@ class _SearchScreenState extends State<SearchScreen> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => MapScreen(),
+                              builder: (context) => MapScreen(
+                                  startPosition: startPosition,
+                                  endPosition: endPosition),
                             ),
                           );
                         }
