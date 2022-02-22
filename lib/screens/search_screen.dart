@@ -29,7 +29,7 @@ class _SearchScreenState extends State<SearchScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    String apiKey = 'AIzaSyCmBmDcWkbaV5uObneKoEOWlZ8NvD-m4_0';
+    String apiKey = 'AIzaSyDkenoJU2mp21o2v4FC9ETAnUGhIKjM1Sc';
     googlePlace = GooglePlace(apiKey);
 
     startFocusNode = FocusNode();
